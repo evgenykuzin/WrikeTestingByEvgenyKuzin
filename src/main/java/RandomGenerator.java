@@ -35,15 +35,15 @@ public class RandomGenerator {
         };
         switch (questionNumber){
             case 1:{
-                    answer = firstQuestion[random.nextInt(1)];
+                    answer = firstQuestion[random.nextInt(2)];
                 break;
             }
             case 2:{
-                answer = secondQuestion[random.nextInt(4)];
+                answer = secondQuestion[random.nextInt(5)];
                 break;
             }
             case 3:{
-                answer = thirdQuestion[random.nextInt(2)];
+                answer = thirdQuestion[random.nextInt(3)];
                 break;
             }
         }
