@@ -1,17 +1,10 @@
 import java.util.Random;
 
 public class RandomGenerator {
-    private static final String emailMask = "wpt@wriketask.qaa";
 
     public static String getRandomEmail() {
-        Random random = new Random();
-        char[] word = new char[random.nextInt(8) + 3]; // words of length 3 through 10. (1 and 2 letter words are boring.)
-        StringBuilder randomEmail = new StringBuilder();
-        for (int j = 0; j < word.length; j++) {
-            randomEmail.append((char) ('a' + random.nextInt(26)));
-        }
-
-        return randomEmail+emailMask;
+        String emailMask = "wpt@wriketask.qaa";
+        return getRandomWord()+emailMask;
     }
 
     public static String getRandomAnswer(int questionNumber){
@@ -33,20 +26,35 @@ public class RandomGenerator {
           Xpaths.NO_PATH,
           Xpaths.OTHER_PATH
         };
+        int r;
         switch (questionNumber){
             case 1:{
-                    answer = firstQuestion[random.nextInt(2)];
+                 r = random.nextInt(2);
+                    answer = firstQuestion[r];
+
                 break;
             }
             case 2:{
-                answer = secondQuestion[random.nextInt(5)];
+                 r = random.nextInt(5);
+                answer = secondQuestion[r];
                 break;
             }
             case 3:{
-                answer = thirdQuestion[random.nextInt(3)];
+                 r = random.nextInt(1);
+                answer = thirdQuestion[r];
                 break;
             }
         }
         return answer;
+    }
+
+    public static String getRandomWord(){
+        Random random = new Random();
+        char[] word = new char[random.nextInt(8) + 3]; // words of length 3 through 10. (1 and 2 letter words are boring.)
+        StringBuilder randomWord = new StringBuilder();
+        for (int j = 0; j < word.length; j++) {
+            randomWord.append((char) ('a' + random.nextInt(26)));
+        }
+        return randomWord.toString();
     }
 }

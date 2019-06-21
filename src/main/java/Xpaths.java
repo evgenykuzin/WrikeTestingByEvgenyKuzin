@@ -13,6 +13,7 @@ public class Xpaths {
     public static final String YES_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[2]/div/form/div[3]/label[1]/button";
     public static final String NO_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[2]/div/form/div[3]/label[2]/button";
     public static final String OTHER_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[2]/div/form/div[3]/label[3]/button";
+    public static final String OTHER_INPUT_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[2]/div/form/div[3]/label[3]/button/span/input";
     public static final String SUBMIT_RESULTS_BUTTON_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[2]/div/form/button";
     public static final String RESEND_EMAILE_BUTTON_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[1]/p[3]/button";
     public static final String H1_PATH = "/html/body/div[1]/main/div/div/div[2]/div/div[1]/h1";
@@ -20,7 +21,6 @@ public class Xpaths {
     public static final String BTN_RESEND_PROGRESS_PATH ="/html/body/div[1]/main/div/div/div[2]/div/div[1]/p[3]/button/span";
     public static final String TWITTER_LINK_PATH = "/html/body/div[1]/div/div[3]/div/div[1]/div/ul/li[1]/a";
     public static final String TWITTER_ICON_PATH = "/html/body/div[1]/div/div[3]/div/div[1]/div/ul/li[1]/a/svg";
-
 
 
 }
